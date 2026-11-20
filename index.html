@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joshua Sam — nine builds from 2026</title>
+<meta name="description" content="Nine projects built over 2026: property and job reports assembled from public data, an ad-trend pipeline, a workout log, a travel planner, and two games.">
+<meta property="og:title" content="Joshua Sam — nine builds from 2026">
+<meta property="og:description" content="Property and job reports assembled from public data, an ad-trend pipeline, a workout log, a travel planner, and two games.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#DCDED6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232B4A3F'/%3E%3Crect x='5' y='9' width='14' height='3' fill='%23DCDED6'/%3E%3Crect x='5' y='15' width='22' height='3' fill='%23DCDED6'/%3E%3Crect x='5' y='21' width='9' height='3' fill='%23DCDED6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to the work</a>
+
+<header class="masthead">
+  <p class="wordmark">Joshua Sam</p>
+  <p class="locale">Melbourne, Australia</p>
+</header>
+
+<main>
+
+  <section class="opening">
+    <h1>Most of what I build takes something messy and returns a straight answer.</h1>
+    <p class="lead">Over 2026 I built nine things on my own. Property and job reports assembled out of
+      government and public data, an ad-trend pipeline, a workout log, a travel planner, and two games.
+      All of it is below, newest first.</p>
+
+    <table class="provenance">
+      <caption>How this page was assembled</caption>
+      <tbody>
+        <tr><th scope="row">Projects</th><td>9</td></tr>
+        <tr><th scope="row">Commits</th><td>369</td></tr>
+        <tr><th scope="row">Active</th><td>March – October 2026</td></tr>
+        <tr><th scope="row">Mostly</th><td>TypeScript, Next.js, React, Postgres</td></tr>
+        <tr><th scope="row">Source</th><td>Local git history, read 20 November 2026</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="work" class="work">
+    <h2 class="section-head">Nine builds, newest first</h2>
+
+    <div class="axis" aria-hidden="true">
+      <span class="axis-tick" style="--at:0%">Mar</span>
+      <span class="axis-tick" style="--at:12.65%">Apr</span>
+      <span class="axis-tick" style="--at:24.90%">May</span>
+      <span class="axis-tick" style="--at:37.55%">Jun</span>
+      <span class="axis-tick" style="--at:49.80%">Jul</span>
+      <span class="axis-tick" style="--at:62.45%">Aug</span>
+      <span class="axis-tick" style="--at:75.10%">Sep</span>
+      <span class="axis-tick" style="--at:87.35%">Oct</span>
+    </div>
+
+    <ol class="ledger">
+
+      <li class="record">
+        <div class="record-body">
+          <h3>Gym Sim</h3>
+          <p>A Roblox gym game. Train individual muscle groups, qualify on physique, then compete on
+            stage in a posing skill-check for prize money. The server holds every piece of authority and
+            the clients only send intent, so the training maths stays pure enough to unit-test outside Studio.</p>
+          <p class="stack">Luau, Rojo, Wally, ProfileStore, Lune</p>
+          <p class="period">26 August – 21 October 2026, 160 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:72.65%;--w:22.86%;--i:1"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>JobDecoder</h3>
+          <p>Paste a job-listing URL and get back one scannable report: a verdict on whether the role is
+            worth applying for, a salary benchmark, and a list of red and green flags. Every claim shows its
+            source, its date, and how confident it is. Extraction is best-effort and never takes the report down.</p>
+          <p class="stack">Next.js 16, TypeScript, Claude, Prisma, Neon Postgres</p>
+          <p class="period">22 July – 12 August 2026, 40 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:58.37%;--w:8.57%;--i:2"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>ReelClaw Templates</h3>
+          <p>Reusable templates for short-form video. Hand a generator script some clips and a hook line
+            and it returns a render-ready 1080&nbsp;&times;&nbsp;1920 reel, captions sized automatically and
+            kept inside the safe zones that TikTok and Reels crop to.</p>
+          <p class="stack">Node, HyperFrames, ffmpeg, headless Chrome</p>
+          <p class="period">29 July – 7 August 2026, 11 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:61.22%;--w:3.67%;--i:3"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>PropertyReport</h3>
+          <p>Enter any Victorian address and get a property report built from authoritative government
+            data: crime rates, school catchments, flood and bushfire overlays, demographics. Datasets are
+            ingested offline and committed, so a request never waits on a flaky government endpoint.
+            Finished reports cache to a link you can share.</p>
+          <p class="stack">Next.js 16, TypeScript, Prisma, Neon Postgres, shadcn/ui</p>
+          <p class="period">4 June – 7 July 2026, 117 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:38.78%;--w:13.47%;--i:4"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>AdLens</h3>
+          <p>An ad-trends dashboard. It ingests advertising creative from Meta, TikTok, and Google,
+            enriches each one with Gemini, and surfaces the themes, formats, and volume leaders moving in a
+            given industry. Three layers that talk to each other only through Postgres.</p>
+          <p class="stack">Next.js, TypeScript, Supabase, Gemini, Vitest</p>
+          <p class="period">20 May – 3 June 2026, 31 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:32.65%;--w:5.71%;--i:5"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>Wander</h3>
+          <p>A travel planner. Choose the kinds of places you care about and how far you are willing to
+            go, and it lays out a day with the transport between each stop worked out.</p>
+          <p class="stack">React, Vite</p>
+          <p class="period">April 2026</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:24.08%;--w:0%;--i:6"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>Life OS</h3>
+          <p>One app in place of three: habit streaks, goals broken into milestones, a Pomodoro study
+            mode that tracks subjects, and a friends feed so progress is visible to someone other than you.
+            A mobile app and a web app sharing one type-safe API.</p>
+          <p class="stack">Expo, React Native, Next.js, tRPC, Prisma, Supabase</p>
+          <p class="period">March 2026</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:10.20%;--w:2.04%;--i:7"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>MemeMerge</h3>
+          <p>A mobile merge game, built in Unity for iOS and Android and wired up with the whole live-ops
+            layer: interstitial, rewarded and banner ads under a COPPA-safe configuration, anonymous
+            sign-in on first launch, and cloud leaderboards.</p>
+          <p class="stack">Unity, C#, Google AdMob, Unity Gaming Services</p>
+          <p class="period">March 2026, 9 commits</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:4.08%;--w:0.41%;--i:8"></span></div>
+      </li>
+
+      <li class="record">
+        <div class="record-body">
+          <h3>Iron Log</h3>
+          <p>A workout logger. Save templates, run a session against a rest timer, and watch volume per
+            muscle group trend across months. React on the front, Express and SQLite behind token auth.</p>
+          <p class="stack">React, Vite, Express, SQLite, JWT, Recharts</p>
+          <p class="period">March 2026</p>
+        </div>
+        <div class="lane"><span class="bar" style="--l:2.86%;--w:0%;--i:9"></span></div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section class="closing">
+    <h2>Want the detail on one of these?</h2>
+    <p>The repositories are private, so the short descriptions above are all you can see from here. If
+      any of them is interesting to you I will happily walk you through it — the architecture, how it is
+      tested, or why a decision went the way it did.</p>
+    <p class="contact"><a href="https://github.com/jsam2429">github.com/jsam2429</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Built by hand, November 2026.</p>
+</footer>
+
+</body>
+</html>
